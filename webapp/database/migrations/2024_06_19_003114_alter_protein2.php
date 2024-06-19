@@ -14,6 +14,9 @@ return new class extends Migration
     public function up()
     {
         //
+        Schema::table('protein', function (Blueprint $table) {
+            $table->uuid("uuid")->nullable();
+        });
     }
 
     /**
